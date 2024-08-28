@@ -8,18 +8,19 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Agrega estilos para ocultar el contenedor inicialmente */
-    #shareOptions {
+    #shareOptions{
       display: none;
     }
+    
   </style>
+
 </head>
 
 <body class="m-0 min-h-screen flex items-center justify-center bg-[#edf2f8]">
 
-  <div class="article-preview bg-white rounded-lg overflow-hidden w-[380px] md:w-[750px] flex flex-col md:flex-row">
+  <div class="article-preview bg-white rounded-lg  w-[380px] md:w-[750px] flex flex-col md:flex-row">
     <div class="w-full md:w-2/3">
-      <img class="w-full h-full object-cover" src="../images/drawers.jpg" alt="Article image desktop">
+      <img class="w-full h-full object-cover" src="./images/drawers.jpg" alt="Article image desktop">
     </div>
 
     <div class="md:w-5/6 p-6 flex flex-col justify-center relative">
@@ -29,7 +30,7 @@
         to help you make any room feel complete.</p>
       
       <div class="flex items-center mb-6 relative">
-        <img src="../images/avatar-michelle.jpg" alt="Author Image" class="rounded-full w-8 h-8 mr-4">
+        <img src="./images/avatar-michelle.jpg" alt="Author Image" class="rounded-full w-8 h-8 mr-4">
         <div>
           <p class="text-gray-600 text-sm">Coded by <a href="#">Rita Trindade da Cruz</a></p>
           <p class="text-gray-400 text-sm">28 Jun 2023</p>
@@ -39,9 +40,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12"><path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
           </button>
         
-          <div id="shareOptions" class="absolute bg-[#49556b] text-white rounded-lg p-2 flex flex-row gap-3">
+          <div id="shareOptions" class="static bg-[#49556b] text-white rounded-lg p-2 flex flex-row gap-3" >
             <div class="triangle "></div>
-            <!-- <p class="text-sm">S H A R E</p> -->
+            <p class="text-sm">S H A R E</p> 
             <a href="#" class="hover:text-gray-400" aria-label="Share on Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#FFF" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"/></svg>
             </a>
